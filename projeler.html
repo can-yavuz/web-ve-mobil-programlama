@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kişisel Portföy</title>
+    <!-- CSS baglantisi -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- JS baglantisi -->
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <img src="assets/background.jpg" class="arkaplan_gorseli">
+    <!-- arkaplan_gorseli sinifinda ozellestirilmis arkaplan gorseli -->
+    <!-- Navbar -->
+    <nav id="navbar">
+        <!-- Container icerisinde kullandigim title ve navigasyon menuleri -->
+        <div class="container">
+            <h1 id="title">NASIF CAN YAVUZ</h1>
+            <div>
+                <ul>
+                    <li><a class="link" href="index.html">Anasayfa</a></li>
+                    <li><a class="link" href="hakkimda.html">Hakkımda</a></li>
+                    <li><a class="active" href="projeler.html">Projelerim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Select ile kategorize etme ve kategorilere deger atama -->
+    <div class="container_image">
+    <h2 class="genel_title">Projelerim</h2>
+    <select id="select-category" onChange="kategoriyiGetir(this)">
+        <option value="all">Hepsi</option>
+        <option value="cpp">C++</option>
+        <option value="csharp">C#</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+    </select>
+
+    <!-- Proje ekleme -->
+    <div class="row">
+        <div kategori="cpp" class="column">
+            <img src="assets/projects_img/cpp.jpg" alt="Smith Waterman Algoritması Uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+        <div kategori="csharp" class="column">
+            <img src="assets/projects_img/csharp.jpg" alt="Boyer Moore Algoritması Uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+        <div kategori="java" class="column">
+            <img src="assets/projects_img/java.jpg" alt="Dosya Şifreleme Uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+        <div kategori="java" class="column">
+            <img src="assets/projects_img/java_2.jpg" alt="Nesne Yönelimli Programlama Uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+        <div kategori="java" class="column">
+            <img src="assets/projects_img/java_3.jpg" alt="Masaüstü Hastane Yönetim Uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+        <div kategori="python" class="column">
+            <img src="assets/projects_img/python.jpg" alt="Derin öğrenme algoritmalarından PSO uygulaması" style="width:100%" onclick="modalAc(this);">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="closebtn" onclick="modalKapat()">&times;</span>
+        <img id="modal_opened" class="modal-icerik">
+        <div id="imgtext"></div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

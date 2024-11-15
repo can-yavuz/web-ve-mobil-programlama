@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kişisel Portföy</title>
+        <!-- CSS baglantisi -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- JS baglantisi -->
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <img src="assets/background.jpg" class="arkaplan_gorseli"> <!-- arkaplan_gorseli sinifinda ozellestirilmis arkaplan gorseli -->
+        <!-- Navbar -->
+        <nav id="navbar">
+            <!-- Container icerisinde kullandigim title ve navigasyon menuleri -->
+            <div class="container">
+                <h1 id="title">NASIF CAN YAVUZ</h1>
+                <div>
+                    <ul>
+                        <li><a class="active" href="index.html">Anasayfa</a></li>
+                        <li><a class="link" href="hakkimda.html">Hakkımda</a></li>
+                        <li><a class="link" href="projeler.html">Projelerim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Anasayfa Bölümü-->
+        <header>
+            <h1 class="hosgeldin_mesaji">HOŞGELDİNİZ</h1>
+        </header>
+
+        <!-- Javascript saat -->
+        <div id="clock" class="saatim"></div> 
+
+        <!-- Icerik -->
+        <div class="anasayfa_icerik_yazisi">"Bu web sitesi, lisans düzeyinde web ve mobil programlama dersi için proje olarak tasarlanmıştır."</div>
+
+        <h1 class="genel_title">İletişim</h1>
+        <div class="container_iletisim">
+            <form action="/action_page.php">
+                <input type="text" id="isim" name="firstname" placeholder="Adınız...">
+                <input type="text" id="email" name="lastname" placeholder="E-Posta Adresiniz..">
+                <textarea id="mesaj" name="subject" placeholder="Mesajınız..." style="height:200px"></textarea>
+                <button onclick="iletisim_format_kontrolu()" class="butonum">Gönder</button>
+              </form>
+        </div>
+    </body>
+</html>

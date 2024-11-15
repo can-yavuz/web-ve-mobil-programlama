@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kişisel Portföy</title>
+    <!-- CSS baglantisi -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- JS baglantisi -->
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <img src="assets/background.jpg" class="arkaplan_gorseli">
+    <!-- arkaplan_gorseli sinifinda ozellestirilmis arkaplan gorseli -->
+    <!-- Navbar -->
+    <nav id="navbar">
+        <!-- Container icerisinde kullandigim title ve navigasyon menuleri -->
+        <div class="container">
+            <h1 id="title">NASIF CAN YAVUZ</h1>
+            <div>
+                <ul>
+                    <li><a class="link" href="index.html">Anasayfa</a></li>
+                    <li><a class="active" href="hakkimda.html">Hakkımda</a></li>
+                    <li><a class="link" href="projeler.html">Projelerim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Icerik -->
+    <div class="hakkimda_yazisi">
+        <div>
+            <h2>İsim</h2>
+            <p>Nasıf Can Yavuz</p>
+            <h2>Meslek</h2>
+            <p>Öğrenci</p>
+            <h2>Hobiler</h2>
+            <p>Satranç oynamak, kayak yapmak, enstrüman çalmak, balık tutmak</p>
+            <h2>Biyografi</h2>
+            <div> 2001 yılında Kayseri'nin Kocasinan ilçesinde dünyaya geldim. İlkokul ve ortaokul eğitimimi Kayseri'de aldıktan sonra iki yıl
+                <div style="display: none;" id="icerik_devam_id"> <!-- baslangicta bu kisim gorunmesin diye display: none stilini kullandim-->
+                    Ankara Alparslan Anadolu Lisesinde eğitim aldım. Lisenin kalan iki yılını da Kayseri 75.Yıl Cumhuriyet Anadolu Lisesinde tamamladım. Şu anda Recep Tayyip Erdoğan Üniversitesinde, bilgisayar mühendisliği bölümünde dördüncü sınıf öğrencisiyim.
+                </div>
+            </div>
+            <br>
+            <button id="buton_fazla_az_id" class="butonum" onclick="daha_fazla_oku()"> Daha Fazla Göster </button>
+        </div>
+    </div>
+</body>
+</html>
